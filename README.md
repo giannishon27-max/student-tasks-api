@@ -1,42 +1,44 @@
 # Student Tasks API
 
-Simple REST API built with Spring Boot for task management.
+Simple REST API for task management built with Spring Boot.
+
+## Tech Stack
+- Java
+- Spring Boot
+- Spring Data JPA
+- H2 Database
+- Maven
 
 ## Features
 - Create tasks
-- Read tasks
-- Update tasks
-- Delete tasks
+- Get all tasks
+- Persist data with JPA
+- In-memory database for development
 
-## Tech
-- Java
-- Spring Boot
-- Maven
+## Example Endpoint
 
-## Endpoints
+GET /tasks
 
-GET /tasks  
-Returns all tasks.
+Response:
 
-GET /tasks/{id}  
-Returns a task by id.
+[
+  {
+    "id": 1,
+    "title": "Learn Spring Boot",
+    "completed": false
+  }
+]
 
-POST /tasks  
-Creates a new task.
+## Run the project
 
-PUT /tasks/{id}  
-Updates a task.
+Clone the repo:
 
-DELETE /tasks/{id}  
-Deletes a task.
+git clone https://github.com/giannishon27-max/student-tasks-api
 
-## Example request
+Run:
 
-POST /tasks
+mvn spring-boot:run
 
-```json
-{
-  "id": 4,
-  "title": "Write README",
-  "completed": false
-}
+Open:
+
+http://localhost:8080/tasks
