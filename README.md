@@ -1,10 +1,17 @@
 # Student Tasks API
 
-Simple REST API built with Spring Boot.
+Simple REST API built with Spring Boot for task management.
 
 ## Features
+- Create tasks
+- Read tasks
+- Update tasks
+- Delete tasks
 
-CRUD operations for tasks.
+## Tech
+- Java
+- Spring Boot
+- Maven
 
 ## Endpoints
 
